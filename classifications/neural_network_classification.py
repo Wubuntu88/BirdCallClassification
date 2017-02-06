@@ -24,7 +24,7 @@ for k in range(0, len(result)):
             print("k: ", k, ", i", i, "result: ", result[k][i])
             total += 1
 
-print("total: ", total)
+print("total records with prediction prob > .3: ", total)
 
 file_path = "z_label_predictions/test_ann_alpha=0.01_iter=500_solver=lbfgs.csv"
 writer.write_label_predictions_to_file(relative_file_path=file_path, labels=result)
