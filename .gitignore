@@ -1,5 +1,7 @@
 # I added the *.DS_Store
 *.DS_Store
+# I added to fully get rid of idea
+*.idea/
 
 # Created by https://www.gitignore.io/api/pycharm,python
 
