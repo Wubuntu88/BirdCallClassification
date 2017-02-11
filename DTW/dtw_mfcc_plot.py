@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from dtw import dtw
 import librosa
 
-file_path_1 = "../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile002.wav"
-file_path_2 = "../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile093.wav"
+file_path_1 = "../../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile002.wav"
+file_path_2 = "../../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile093.wav"
 y_1, sampling_rate_1 = librosa.load(file_path_1)
 y_2, sampling_rate_2 = librosa.load(file_path_2)
 
