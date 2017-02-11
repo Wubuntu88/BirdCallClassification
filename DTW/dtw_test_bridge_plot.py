@@ -2,6 +2,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import dtw as dtw
+
+"""
+This script creates a bridge plot with dynamic time warping.
+I assume it is called a bridge plot because it looks like a bridge (kind of).
+"""
+
 samples = 200
 x = np.linspace(0, 2*np.pi, samples + 1)
 
