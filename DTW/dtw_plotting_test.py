@@ -4,6 +4,12 @@ import dtw as dtw
 import numpy as np
 from matplotlib.ticker import FormatStrFormatter
 
+"""
+This script will show a dynamic time warping 'heat-path' plot.
+This is a simple example with sin and cosine.  The sine wave is also
+plotted on the top and the cosine on the left.
+"""
+
 x = np.linspace(0, 2*np.pi, 201)
 sin_x = np.sin(x).reshape(-1, 1)
 cos_x = np.cos(x).reshape(-1, 1)
