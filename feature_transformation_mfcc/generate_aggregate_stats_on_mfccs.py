@@ -14,6 +14,7 @@ else:
 
 
 def mad(data, axis=None):
+    """ Mean absolute deviation """
     return np.mean(np.absolute(data - np.mean(data, axis)), axis)
 
 
