@@ -2,8 +2,9 @@
 import librosa
 import numpy as np
 import matplotlib.pyplot as plt
+f_name = "trainfile016_CettisWarbler03"
 
-file_path = "../../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile012.wav"
+file_path = "../zShortBirdRecordings/" + f_name + ".wav"
 
 y, sr = librosa.load(file_path)
 
@@ -19,7 +20,8 @@ librosa.display.specshow(librosa.logamplitude(S,
                          y_axis='mel', fmin=freq_min, fmax=freq_max,
                          x_axis='time')
 
-plt.colorbar(format='%+2.0f dB')
+plt.colorbar(format='%+2.0f dBFS')
 plt.title('Mel spectrogram')
 plt.tight_layout()
 plt.show()
+#plt.savefig(filename="../zShortMelSpectrograms/" + f_name + ".png")
