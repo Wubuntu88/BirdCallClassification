@@ -3,6 +3,9 @@
 # I added to fully get rid of idea
 *.idea/
 
+# I don't want to add anything of python-speech-features to this repo
+python_speech_features
+
 # Created by https://www.gitignore.io/api/pycharm,python
 
 ### PyCharm ###
