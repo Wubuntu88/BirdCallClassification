@@ -36,20 +36,25 @@ They have a complicated method of computation.
 However, note that they just represent sums of sound intensity at several frequency bins over a time period.
 
 1) Divide the signal into frames.
+
 ![alt Mel Spectrogram 1](figures/CettisWarblerDivided.png)
 
 2) Take DFT of the signal in each frame.
+
 ![alt Mel Spectrogram 1](figures/2_DFT.png)
 
 3) Create mel-spaced triangular filter banks along the frequency axis.
+
 ![alt Mel Spectrogram 1](figures/3_Create_mel_spaced_traingular_filters.png)
 
 4) Calculate the ‘energy’ at each frequency by taking the dot product of the amplitude signal and a filter bank.
+
 ![alt Mel Spectrogram 1](figures/4_energy_at_each_filterbank.png)
 
 5) Take the log of the filterbank energies
 
 6) Take the Discrete Cosine Transform of the logged energies at each mel-spaced filter bank
+
 ![alt Mel Spectrogram 1](figures/5_Discrete_Cosine_Transform.png)
 
 Once the MFCCs have been calculated, 
