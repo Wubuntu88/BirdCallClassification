@@ -1,0 +1,2 @@
+This directory contains all of the mel spectrograms for the training data set.
+execute the `generate_all_melspectrograms.py` program to populate this directory

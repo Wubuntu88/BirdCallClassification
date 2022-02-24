@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import matplotlib.pyplot as plt
-import dtw as dtw
+import dtw.dtw
 import numpy as np
 from matplotlib.ticker import FormatStrFormatter
 

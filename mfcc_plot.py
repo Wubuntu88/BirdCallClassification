@@ -11,7 +11,7 @@ and the value of the mfcc on the y axis.  Different mfccs are shown in different
 that way we can show multiple dimensions on the same plot.
 """
 
-file_path = "../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile015.wav"
+file_path = "NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV/train/nips4b_birds_trainfile015.wav"
 
 y, sr = librosa.load(file_path)
 

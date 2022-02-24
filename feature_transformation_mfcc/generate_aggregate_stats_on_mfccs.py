@@ -18,10 +18,10 @@ def mad(data, axis=None):
     return np.mean(np.absolute(data - np.mean(data, axis)), axis)
 
 
-relative_path_to_data_directory = '../../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_MFCC/' + train_or_test
+relative_path_to_data_directory = '../NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_MFCC/' + train_or_test
 file_names = os.listdir(relative_path_to_data_directory)
 
-output_file = open("../../aggregate_mfcc_data/" + train_or_test + "/agg_mfccs_" + train_or_test + ".txt", "w")
+output_file = open("../aggregate_mfcc_data/" + train_or_test + "/agg_mfccs_" + train_or_test + ".txt", "w")
 iteration = 1
 for f_name in file_names:
     path_to_file = relative_path_to_data_directory + "/" + f_name
